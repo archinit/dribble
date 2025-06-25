@@ -7,6 +7,7 @@
 body,html{
     height: 100%;
     width: 100%;
+    font-family: 'Montserrat';
 }
 
 .main{
@@ -14,27 +15,230 @@ body,html{
     width: 100%;
     display: grid;
     grid-template-columns: 25% 25% 50%;
-    grid-template-rows: 30% 50% 20%; 
+    grid-template-rows: 27% 52% 21%; 
 
 }
 
 #top-left-corner{
-    background-color: red;
+    padding: 40px;
+
+
 }
+
+
+#square{
+    height: 20px;
+    width: 20px;
+    background-color: black;
+    rotate: 45deg;
+    
+}
+
+
 #top-right-corner{
-    background-color: blue;
+    justify-items: end;
+    padding: 40px;
+
+
 }
+
+#top-right-corner h4{
+    margin-top: -12px;
+    margin-bottom: 50px;
+    font-size: 20px;
+    font-weight: 500;
+}
+#top-right-corner h5{
+    font-size: 16px;
+    font-weight: 500;
+    color: rgba(104, 100, 100, 0.76);
+}
+
+
+
 #left-center{
-    background-color: yellow;
-    grid-column: 1/3
-}
-#left-footer{
-    background-color: green;
+
     grid-column: 1/3;
+    padding: 36px;
+    margin-top: -20px;
+
+}
+
+#left-center h1{
+    font-size: 5vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    padding-left: 30px ;
+    
+}
+#left-center h1:nth-child(2n){
+    text-align: center;
+}
+
+#left-footer{
+    grid-column: 1/3;
+    padding: 50px;
+
+
+}
+#left-footer p{
+    width: 60%;
 }
 #right{
-    background-color: pink;
     grid-column: 3;
     grid-row: 1/4;
+    padding: 40px;
+    padding-right: 400px;
+    position: relative;
+
+
 }
+
+#right video{
+    height: 100%;
+    width: max-content;
+    border-radius: 3px;
+}
+
+
+
+#right #search-icon i{
+    font-size: 30px;
+    position: absolute;
+    top: 0;
+    left: 80%;
+    padding-top: 30px;
+    cursor: pointer;
+
+}
+
+#arrow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: orangered;
+    padding: 20px;
+    border-radius:50% ;
+
+}
+
+#arrow i{
+    color: white;
+    font-size: 40px;
+}
+
+
+@media (max-width:600px) {
+    .main{
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 65px 34% 8%; 
+    }
+
+    #top-left-corner{
+    padding: 17px;
+
+
+}
+
+
+    #square{
+        height: 15px;
+        width: 15px;
+
+        
+    }
+
+
+    #top-right-corner{
+        justify-items: end;
+        padding: 40px;
+
+
+    }
+
+    #top-right-corner h4{
+        display: none;
+    }
+    #top-right-corner h5{
+        display: none;
+    }
+
+
+
+    #left-center{
+
+        grid-column: 1/3;
+        padding: 20px;
+
+    }
+
+    #left-center h1{
+        font-size: 15vw;
+        line-height: 15vw;
+        padding-left: 30px ;
+        
+    }
+    #left-center h1:nth-child(2n){
+        text-align: center;
+    }
+
+    #left-footer{
+        grid-column: 1/3;
+        padding: 10px 25px;
+
+
+    }
+    #left-footer p{
+        width: 90%;
+        font-size: 10px;
+    }
+
+    #right{
+        grid-column: 1 / 4;
+        grid-row: 4;
+        padding: 20px;
+        position: relative;
+
+    }
+
+    #right video{
+        height: 45vh;
+        width: 45vh;
+        object-fit: cover;
+        padding-left: 35px;
+        border-radius: 5px;
+}
+
+
+
+    #right #search-icon i{
+        font-size: 20px;
+        position: absolute;
+        top: 0;
+        left: 90%;
+        padding-top: 10px;
+        cursor: pointer;
+
+    }
+
+    #arrow {
+        position: absolute;
+        top: 48%;
+        left: 45%;
+        background-color: orangered;
+        padding: 10px;
+        border-radius:50% ;
+        rotate: 90deg;
+
+    }
+
+    #arrow i{
+        color: white;
+        font-size: 30px;
+    }
+
+}
+
+
+
 
